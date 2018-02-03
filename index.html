@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Trueshy Knows</title>
+        <meta property="og:url" content="http://www.trueshy.com" />
+        <meta property="og:type" content="game" />
+        <meta property="og:title" content="Trushy Knows It" />
+        <meta property="og:description" content="Trushy will answer all your secret questions" />
+        <meta property="og:image" content="./img/Background.png" />
+        <meta name="description" content="Trushy will answer all your secret questions">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/helpers.css">
+    </head>
+    <body>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1763269057311258&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <div class="navigation">
+        <a class='home-link' href='./index.html'><div class="logo nosifer">Trueshy</div></a>
+        <div>
+        <div class="fb-like" data-href="http://www.trueshy.com" data-width="200px" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="space-v"></div>
+          <div class="flex-row">
+            <div class="flex-col flex-1">
+              <div class="nav">
+                <p class="glowing-text nosifer">Trueshy</p>
+              </div>
+              <h1 class="t-center">She knew you would come...<br >Searching for the truth.</h1>
+              <h2 class="t-center">She knows what you know...<br>
+                She is what you are</h2>
+                <div class="space-v"></div>
+            </div>
+            <div class="flex-col flex-2">
+
+              <div class="form-container flex-col">
+                <textarea class="q question" maxlength="110" name='question' placeholder="Ask Anything"></textarea>
+                <h2 class="t-center">Have some manners...write 'Tell Me Trushy'</h2>
+                  <input class="q plea" name='plea' maxlength="20" type="text" placeholder="Your Plea..." >
+                  <button onclick="showAnswer()" class="btn">Reveal The Truth</button>
+              </div>
+          </div>
+          </div>
+          <div class="loader"><div></div></div>
+      </div>
+
+      <div class="ans-div">
+        <div class="ans-text">
+        </div>
+        <div class="flex center f-width">
+        <button class="btn-red" onclick='closeAnswerDiv()'>Ask More</button>
+      </div>
+      </div>
+
+      <div class="footer">
+        <div class=""></div>
+        <div>
+          <a class='disclaimer' href='./disclaimer.html'>Disclaimer</a>
+        </div>
+      </div>
+        <!-- Add your site or application content here -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
